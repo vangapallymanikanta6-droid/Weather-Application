@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Application</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <h1>Weather Application</h1>
+
+        <p class="subtitle">
+            Check real-time weather information
+        </p>
+
+        <!-- Search Section -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Error Message -->
+        <p id="errorMessage" class="error"></p>
+
+        <!-- Loading -->
+        <p id="loading" class="loading">
+            Loading...
+        </p>
+
+        <!-- Weather Card -->
+        <div id="weatherCard" class="weather-card">
+
+            <h2 id="cityName">Hyderabad</h2>
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon"
+            >
+
+            <h3 id="temperature">-- °C</h3>
+
+            <p id="description">
+                --
+            </p>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>Feels Like</span>
+                    <strong id="feelsLike">-- °C</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Humidity</span>
+                    <strong id="humidity">-- %</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Wind Speed</span>
+                    <strong id="windSpeed">-- m/s</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Pressure</span>
+                    <strong id="pressure">-- hPa</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
